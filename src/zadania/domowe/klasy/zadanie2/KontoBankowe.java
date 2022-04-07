@@ -9,12 +9,21 @@ public class KontoBankowe {
         return saldo;
     }
 
-    public void kredyt() {
-
+    public void wplac(int kwota) {
+        saldo = saldo + kwota;
+        System.out.println("Saldo wynosi teraz: " + saldo);
     }
 
-    public void debet() {
-
+    public void wyplac(int kwota) {
+        double temp = 0;
+        temp = saldo;
+        saldo = saldo - kwota;
+        if (saldo < 0) {
+            saldo = temp;
+            System.out.println("Nie ma tyle pieniedzy na koncie");
+        } else {
+            System.out.println("Wyplacono " + kwota + " Pozostało: " + saldo);
+        }
     }
 
 }

@@ -1,4 +1,4 @@
-package zadania.domowe.klasy.Zadanie3;
+package zadania.domowe.klasy.zadanie3;
 
 import java.util.ArrayList;
 import java.util.List;
